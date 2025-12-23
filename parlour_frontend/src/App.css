@@ -29,6 +29,81 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* New parlour/nav style */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1.5px 5px rgba(59,130,246,0.07);
+  padding: 0;
+  margin-bottom: 0;
+}
+.nav-link {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  transition: color .15s;
+  padding: 1.4rem 0.93rem;
+  border-radius: 5px;
+}
+.nav-link:hover {
+  color: #06b6d4;
+  background-color: #f0f9ff;
+}
+
+.brand {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+/* Container constraint */
+.container {
+  width: 100%;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Inputs/fields/buttons */
+input, select, textarea {
+  font-size: 1rem;
+  border: 1.5px solid #e5e7eb;
+  background: #f9fafb;
+}
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #3b82f6;
+  background: #fff;
+}
+.btn {
+  font-size: 1rem;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  transition: background .2s;
+  cursor: pointer;
+  padding: 10px 18px;
+}
+.btn:hover, .btn:focus-visible, .btn-active {
+  background: #06b6d4;
+}
+
+@media (max-width: 900px) {
+  .container { padding-left: 1.1rem; padding-right: 1.1rem; }
+  .navbar, .App-header { font-size: 15px; }
+}
+@media (max-width: 600px) {
+  .container { padding-left: 0.2rem; padding-right: 0.2rem; }
+  .navbar { flex-direction: column; }
+  .theme-toggle { top: 6px; right: 6px; }
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
